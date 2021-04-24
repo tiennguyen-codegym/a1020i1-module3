@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .col-1 {width: 8.33%;}
+        .col-2 {width: 16.66%;}
+        .col-3 {width: 25%;}
+        .col-4 {width: 33.33%;}
+        .col-5 {width: 41.66%;}
+        .col-6 {width: 50%;}
+        .col-7 {width: 58.33%;}
+        .col-8 {width: 66.66%;}
+        .col-9 {width: 75%;}
+        .col-10 {width: 83.33%;}
+        .col-11 {width: 91.66%;}
+        .col-12 {width: 100%;}
+
+        [class*="col-"] {
+            float: left;
+            padding: 10px;
+        }
+
+        .header {
+            background-color: blueviolet;
+            color: white;
+            padding: 15px;
+        }
+
+        .footer {
+            background-color: deepskyblue;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .left-panel ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .left-panel ul li {
+            color: white;
+            background-color: deepskyblue;
+            margin-bottom: 5px;
+            padding: 5px;
+        }
+
+        .left-panel ul li:hover {
+            background-color: red;
+        }
+
+        .right-panel {
+            color: white;
+            background-color: deepskyblue;
+            text-align: center;
+            padding: 5px;
+        }
+
+        /*<= 768*/
+        @media only screen and (max-width: 768px) {
+            [class*="col-"] {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="row">
+    <div class="col-12">
+        <div class="header">
+            <h2 >Chania</h2>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-3">
+        <div class="left-panel">
+            <ul>
+                <li>The Flight</li>
+                <li>The City</li>
+                <li>The Island</li>
+                <li>The Food</li>
+            </ul>
+        </div>
+    </div>
+    <div class="col-6">
+        <div class="center-panel">
+            <h2>The City</h2>
+            <p>Chania is the capital of the Chania region on the island of Crete.
+                The city can be divided in two parts, the old town and the modern city.
+            </p>
+        </div>
+    </div>
+    <div class="col-3">
+        <div class="right-panel">
+            <h3>What?</h3>
+            <p>Chania is a city on the island of Crete.</p>
+            <h3>Where?</h3>
+            <p>Crete is a Greek island in the Mediterranean Sea.</p>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-12">
+        <div class="footer">
+            <p>Resize the browser window to see how the content respond to the resizing.</p>
+        </div>
+    </div>
+</div>
+</body>
+</html>

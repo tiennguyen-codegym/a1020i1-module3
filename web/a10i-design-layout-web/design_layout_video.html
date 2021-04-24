@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .col-1 {width: 8.33%;}
+        .col-2 {width: 16.66%;}
+        .col-3 {width: 25%;}
+        .col-4 {width: 33.33%;}
+        .col-5 {width: 41.66%;}
+        .col-6 {width: 50%;}
+        .col-7 {width: 58.33%;}
+        .col-8 {width: 66.66%;}
+        .col-9 {width: 75%;}
+        .col-10 {width: 83.33%;}
+        .col-11 {width: 91.66%;}
+        .col-12 {width: 100%;}
+
+        [class*="col-"] {
+            float: left;
+            padding: 10px;
+        }
+
+        .header {
+            background-color: blue;
+            color: white;
+            text-align: right;
+        }
+
+        .backgroundRed {
+            background-color: red;
+        }
+
+        .menu {
+            background-color: deepskyblue;
+            text-align: center;
+        }
+
+        .row::after {
+            content: "";
+            clear: both;
+            display: block;
+        }
+
+        /*<= 768*/
+        @media only screen and (max-width: 768px) {
+            [class*="col-"] {
+                width: 100%;
+            }
+        }
+
+        /*<= 368*/
+        @media only screen and (max-width: 368px) {
+            [class*="col-"] {
+                width: 50%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="row">
+        <div class="col-12 header">
+            Phim <span class="backgroundRed">Hoạt Hình</span>
+        </div>
+    </div>
+<!--    <div class="row">-->
+<!--        <div class="col-3 menu">Phim hoạt hình</div>-->
+<!--        <div class="col-3 menu">Phim hoạt hình yêu thích</div>-->
+<!--        <div class="col-3 menu">Nhân vật hoạt hình</div>-->
+<!--        <div class="col-3 menu">Góp ý</div>-->
+<!--    </div>-->
+    <div class="row">
+        <div class="col-12 menu">Phim hoạt hình | Phim hoạt hình yêu thích | Nhân vật hoạt hình | Góp ý</div>
+    </div>
+    <div class="row">
+        <div class="col-4">
+            <div class="row">
+                <div class="col-12">
+                    <video width="100%" controls>
+                        <source src="mov_bbb.mp4" type="video/mp4">
+                        <source src="mov_bbb.ogg" type="video/ogg">
+                        Your browser does not support HTML video.
+                    </video>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <video width="100%" controls>
+                        <source src="mov_bbb.mp4" type="video/mp4">
+                        <source src="mov_bbb.ogg" type="video/ogg">
+                        Your browser does not support HTML video.
+                    </video>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <video width="100%" controls>
+                        <source src="mov_bbb.mp4" type="video/mp4">
+                        <source src="mov_bbb.ogg" type="video/ogg">
+                        Your browser does not support HTML video.
+                    </video>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <video width="100%" controls>
+                        <source src="mov_bbb.mp4" type="video/mp4">
+                        <source src="mov_bbb.ogg" type="video/ogg">
+                        Your browser does not support HTML video.
+                    </video>
+                </div>
+            </div>
+        </div>
+        <div class="col-8">
+            <video width="100%" controls>
+                <source src="mov_bbb.mp4" type="video/mp4">
+                <source src="mov_bbb.ogg" type="video/ogg">
+                Your browser does not support HTML video.
+            </video>
+            <h5>Tớ là Mari</h5>
+            <p>............</p>
+        </div>
+    </div>
+</body>
+</html>
